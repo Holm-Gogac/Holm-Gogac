@@ -1,0 +1,3 @@
+- 👋 Hi, I’m @holm-gogac
+- 🌱 I’m currently learning  Batch
+- 📫 ig: krystof.pospisill
