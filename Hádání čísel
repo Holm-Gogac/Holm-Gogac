@@ -1,0 +1,114 @@
+@echo off
+:menu
+color d
+title Hadani cisel
+cls
+echo Hra o hadani cisel
+echo UROVNE:
+echo Lehka
+echo Stredni
+echo Tezka
+
+
+
+set/p uroven=Napiste uroven:
+if %uroven% equ Lehka goto lehka
+if %uroven% equ Stredni goto stredni
+if %uroven% equ Tezka goto tezka
+
+:lehka
+cls
+color a
+set /a d= 0
+set /a c= 1
+set /a a = %random%
+set /a a = %a%*100
+set /a a = %a%/32768
+set /a a = %a%+1
+echo %a%>nul
+echo Uroven Lehka!
+echo Cisla od 0-100
+:znovu1
+set /p tym1=napis svuj typ:
+set /a d= %c%+%d%
+
+if %tym1% equ %a% cls & Echo Spravne Na %d% pokus & timeout>nul /t 3 & goto menu
+if %tym1% lss %a% cls & Echo Hledane cislo je vetsi & goto znovu1
+if %tym1% gtr %a% cls & Echo Hledane cislo je mensi & goto znovu1
+
+
+
+
+
+:stredni
+cls 
+color b
+set /a d= 0
+set /a c= 1
+set /a b = %random%
+set /a b = %b%*100
+set /a b = %b%/3276
+set /a b = %b%+1
+echo %b%>nul
+echo Uroven Stredni!
+echo Cisla od 0-1000
+:znovu2
+set /a d= %c%+%d%
+set /p tym2=napis svuj typ:
+
+if %tym2% equ %b% Echo Spravne Na %d% pokus & timeout>nul /t 3 & goto menu
+if %tym2% lss %b%  cls & Echo Hledane cislo je vetsi & goto znovu2 
+if %tym2% gtr %b%  cls & Echo Hledane cislo je mensi & goto znovu2 
+
+
+
+
+:tezka
+cls 
+color c
+set /a d= 0
+set /a c= 1
+set /a b = %random%
+set /a b = %b%*100
+set /a b = %b%/327
+set /a b = %b%+1
+echo %b%>nul
+echo Uroven Tezka!
+echo Cisla od 0-10000
+:znovu3
+set /a d= %c%+%d%
+set /p tym3=napis svuj typ:
+
+if %tym3% equ %b% Echo Spravne Na %d% pokus & timeout>nul /t 3 & goto menu
+if %tym3% lss %b%  cls & Echo Hledane cislo je vetsi & goto znovu3 
+if %tym3% gtr %b%  cls & Echo Hledane cislo je mensi & goto znovu3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pause
