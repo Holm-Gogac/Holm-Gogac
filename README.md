@@ -1,3 +1,3 @@
-- 👋 ahoj jmenuju @holm-gogac
-- 🌱 učím se Batch
-- 📫 ig: krystof.pospisill
+- 👋 Ahoj jmenuju @holm-gogac
+- 🌱  Učím se Batch
+- 📫 Ig: krystof.pospisill
