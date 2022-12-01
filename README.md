@@ -1,3 +1,3 @@
-- 👋 Hi, I’m @holm-gogac
-- 🌱 I’m currently learning  Batch
+- 👋 ahoj jmenuju @holm-gogac
+- 🌱 učím se Batch
 - 📫 ig: krystof.pospisill
